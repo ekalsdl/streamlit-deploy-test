@@ -267,6 +267,22 @@ div[data-baseweb="select"] span {
     color: #FFFFFF !important;
 }
 
+/* 운동 통계 카드 제목 글씨 색상 */
+[data-testid="stMetricLabel"] {
+    color: #D0D2D8 !important;
+    opacity: 1 !important;
+}
+
+[data-testid="stMetricLabel"] p {
+    color: #D0D2D8 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+/* 운동 통계 카드 숫자 색상 */
+[data-testid="stMetricValue"] {
+    color: #D7FF63 !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
