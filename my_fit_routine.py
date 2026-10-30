@@ -36,23 +36,6 @@ for key, value in defaults.items():
 
 st.markdown("""
 <style>
-/* 운동 부위 선택 태그 배경색 변경 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] {
-    background-color: #D7FF63 !important;
-    color: #171819 !important;
-    border: none !important;
-}
-
-/* 상체, 하체, 복부 글씨 색상 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
-    color: #171819 !important;
-}
-
-/* 태그 삭제 X 버튼 색상 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
-    fill: #171819 !important;
-    color: #171819 !important;
-}
 /* 전체 배경 및 상단 영역 */
 html, body,
 [data-testid="stApp"],
@@ -298,6 +281,18 @@ div[data-baseweb="select"] span {
 /* 운동 통계 카드 숫자 색상 */
 [data-testid="stMetricValue"] {
     color: #D7FF63 !important;
+}
+/* 운동 부위 선택 태그 색상 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] {
+    background: #D7FF63 !important;
+    background-color: #D7FF63 !important;
+    border: 1px solid #D7FF63 !important;
+}
+
+/* 태그 글씨와 X 아이콘 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] * {
+    color: #18191B !important;
+    fill: #18191B !important;
 }
 </style>
 """, unsafe_allow_html=True)
