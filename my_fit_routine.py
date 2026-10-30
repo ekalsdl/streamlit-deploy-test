@@ -282,17 +282,22 @@ div[data-baseweb="select"] span {
 [data-testid="stMetricValue"] {
     color: #D7FF63 !important;
 }
-/* 운동 부위 선택 태그 색상 */
-div[data-testid="stMultiSelect"] [data-baseweb="tag"] {
-    background: #D7FF63 !important;
+/* 운동 부위 선택 태그 배경색 변경 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] {
     background-color: #D7FF63 !important;
-    border: 1px solid #D7FF63 !important;
+    color: #171819 !important;
+    border: none !important;
 }
 
-/* 태그 글씨와 X 아이콘 */
-div[data-testid="stMultiSelect"] [data-baseweb="tag"] * {
-    color: #18191B !important;
-    fill: #18191B !important;
+/* 상체, 하체, 복부 글씨 색상 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
+    color: #171819 !important;
+}
+
+/* 태그 삭제 X 버튼 색상 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
+    fill: #171819 !important;
+    color: #171819 !important;
 }
 </style>
 """, unsafe_allow_html=True)
