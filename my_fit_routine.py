@@ -36,7 +36,23 @@ for key, value in defaults.items():
 
 st.markdown("""
 <style>
+/* 운동 부위 선택 태그 배경색 변경 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] {
+    background-color: #D7FF63 !important;
+    color: #171819 !important;
+    border: none !important;
+}
 
+/* 상체, 하체, 복부 글씨 색상 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
+    color: #171819 !important;
+}
+
+/* 태그 삭제 X 버튼 색상 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
+    fill: #171819 !important;
+    color: #171819 !important;
+}
 /* 전체 배경 및 상단 영역 */
 html, body,
 [data-testid="stApp"],
