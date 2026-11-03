@@ -282,36 +282,25 @@ div[data-baseweb="select"] span {
    운동 부위 선택 태그 색상 최종 수정
    ================================== */
 
-/* 태그 배경색: 다음 버튼과 동일 */
+/* 태그 배경색 */
 div[data-testid="stMultiSelect"] [data-baseweb="tag"] {
     background: #D7FF63 !important;
     background-color: #D7FF63 !important;
-    border: 1px solid #D7FF63 !important;
+    border: none !important;
     box-shadow: none !important;
 }
 
-/* 태그 글씨 색상 */
-div[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
-    color: #18191B !important;
-}
-
-/* 태그 내부 아이콘 및 글씨 */
+/* 태그 글씨 및 내부 아이콘 색상 */
 div[data-testid="stMultiSelect"] [data-baseweb="tag"] * {
-    color: #18191B !important;
-}
-
-/* 삭제 X 아이콘 */
-div[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
     color: #18191B !important;
     fill: #18191B !important;
 }
 
-/* 삭제 X 아이콘 내부 */
+/* 삭제 X 아이콘 */
 div[data-testid="stMultiSelect"] [data-baseweb="tag"] svg path {
     fill: #18191B !important;
     stroke: #18191B !important;
 }
-
 </style>
 """, unsafe_allow_html=True)
 
