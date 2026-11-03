@@ -34,7 +34,6 @@ for key, value in defaults.items():
 # 3. CSS 디자인
 # ==========================================
 
-```python
 st.markdown("""
 <style>
 /* 전체 배경 및 상단 영역 */
@@ -315,7 +314,6 @@ div[data-testid="stMultiSelect"] [data-baseweb="tag"] svg path {
 
 </style>
 """, unsafe_allow_html=True)
-```
 
 # ==========================================
 # 4. 상단 앱 제목
