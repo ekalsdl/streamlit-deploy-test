@@ -282,20 +282,24 @@ div[data-baseweb="select"] span {
    운동 부위 선택 태그 색상 최종 수정
    ================================== */
 
-/* 운동 부위 태그 배경색 강제 변경 */
-div[data-testid="stMultiSelect"] span[data-baseweb="tag"] {
+/* ==================================
+   운동 부위 선택 태그 색상
+   ================================== */
+
+/* 태그 배경색 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] {
     background-color: #D7FF63 !important;
     background: #D7FF63 !important;
     border: none !important;
 }
 
-/* 태그 내부 글씨 색상 */
-div[data-testid="stMultiSelect"] span[data-baseweb="tag"] span {
+/* 태그 내부 글씨 */
+[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
     color: #18191B !important;
 }
 
 /* 태그 삭제 아이콘 */
-div[data-testid="stMultiSelect"] span[data-baseweb="tag"] svg {
+[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
     color: #18191B !important;
     fill: #18191B !important;
 }
