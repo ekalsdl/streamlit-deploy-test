@@ -284,20 +284,20 @@ div[data-baseweb="select"] span {
 
 /* 모든 멀티셀렉트 태그 배경색 강제 변경 */
 [data-baseweb="tag"] {
-    background-color: #D7FF63 !important;
-    background: #D7FF63 !important;
-    border-color: #D7FF63 !important;
+    background-color: rgb(223, 253, 124) ;
+    background: rgb(223, 253, 124) !important;
+    border-color: rgb(223, 253, 124) !important;
 }
 
 /* 태그 글씨 색상 */
 [data-baseweb="tag"] span {
-    color: #18191B !important;
+    color: rgb(0,0,0) !important;
 }
 
 /* 태그 삭제 아이콘 */
 [data-baseweb="tag"] svg {
-    color: #18191B !important;
-    fill: #18191B !important;
+    color: rgb(0,0,0) !important;
+    fill: rgb(0,0,0)!important;
 }
 </style>
 """, unsafe_allow_html=True)
