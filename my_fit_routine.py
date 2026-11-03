@@ -34,6 +34,7 @@ for key, value in defaults.items():
 # 3. CSS 디자인
 # ==========================================
 
+```python
 st.markdown("""
 <style>
 /* 전체 배경 및 상단 영역 */
@@ -135,7 +136,7 @@ hr {
     border: 2px solid #D7FF63 !important;
 }
 
-/* 운동 레벨 영역: 중앙 정렬 + 너비 제한 */
+/* 운동 레벨 영역 */
 .st-key-level_section {
     width: 100%;
     max-width: 650px;
@@ -170,14 +171,14 @@ hr {
     overflow-wrap: break-word;
 }
 
-/* 활동 수준 영역: 너무 넓어지지 않게 제한 */
+/* 활동 수준 영역 */
 .st-key-activity_section {
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
 }
 
-/* 활동 수준 선택지 사이 간격 및 줄 간격 */
+/* 활동 수준 선택지 */
 .st-key-activity_section [role="radiogroup"] {
     gap: 13px !important;
 }
@@ -196,7 +197,7 @@ hr {
     line-height: 1.65 !important;
 }
 
-/* 캡션 및 작은 안내 문구: 어두운 배경에서 가독성 강화 */
+/* 캡션 및 작은 안내 문구 */
 [data-testid="stCaptionContainer"] p,
 .stMarkdown small,
 small,
@@ -213,7 +214,7 @@ small,
     opacity: 1 !important;
 }
 
-/* 주간 운동 횟수 등 슬라이더 눈금/설명 */
+/* 슬라이더 눈금 및 설명 */
 [data-testid="stSlider"] *,
 [data-testid="stSelectSlider"] * {
     color: #D0D2D8;
@@ -255,7 +256,7 @@ div[data-baseweb="select"] span {
 }
 
 [data-testid="stMetricValue"] {
-    color: #D7FF63;
+    color: #D7FF63 !important;
 }
 
 [data-testid="stProgressBar"] > div > div {
@@ -266,7 +267,7 @@ div[data-baseweb="select"] span {
     color: #FFFFFF !important;
 }
 
-/* 운동 통계 카드 제목 글씨 색상 */
+/* 운동 통계 카드 제목 */
 [data-testid="stMetricLabel"] {
     color: #D0D2D8 !important;
     opacity: 1 !important;
@@ -278,30 +279,43 @@ div[data-baseweb="select"] span {
     font-weight: 600 !important;
 }
 
-/* 운동 통계 카드 숫자 색상 */
-[data-testid="stMetricValue"] {
-    color: #D7FF63 !important;
-}
-/* 운동 부위 선택 태그 배경색 변경 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] {
+/* ==================================
+   운동 부위 선택 태그 색상 최종 수정
+   ================================== */
+
+/* 태그 배경색: 다음 버튼과 동일 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] {
+    background: #D7FF63 !important;
     background-color: #D7FF63 !important;
-    color: #171819 !important;
-    border: none !important;
+    border: 1px solid #D7FF63 !important;
+    box-shadow: none !important;
 }
 
-/* 상체, 하체, 복부 글씨 색상 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
-    color: #171819 !important;
+/* 태그 글씨 색상 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] span {
+    color: #18191B !important;
 }
 
-/* 태그 삭제 X 버튼 색상 */
-[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
-    fill: #171819 !important;
-    color: #171819 !important;
+/* 태그 내부 아이콘 및 글씨 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] * {
+    color: #18191B !important;
 }
+
+/* 삭제 X 아이콘 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] svg {
+    color: #18191B !important;
+    fill: #18191B !important;
+}
+
+/* 삭제 X 아이콘 내부 */
+div[data-testid="stMultiSelect"] [data-baseweb="tag"] svg path {
+    fill: #18191B !important;
+    stroke: #18191B !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
-
+```
 
 # ==========================================
 # 4. 상단 앱 제목
