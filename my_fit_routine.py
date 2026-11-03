@@ -278,27 +278,6 @@ div[data-baseweb="select"] span {
     font-weight: 600 !important;
 }
 
-/* ==================================
-   운동 부위 선택 태그 색상 최종 수정
-   ================================== */
-
-/* 모든 멀티셀렉트 태그 배경색 강제 변경 */
-[data-baseweb="tag"] {
-    background-color: rgb(223, 253, 124) ;
-    background: rgb(223, 253, 124) !important;
-    border-color: rgb(223, 253, 124) !important;
-}
-
-/* 태그 글씨 색상 */
-[data-baseweb="tag"] span {
-    color: rgb(0,0,0) !important;
-}
-
-/* 태그 삭제 아이콘 */
-[data-baseweb="tag"] svg {
-    color: rgb(0,0,0) !important;
-    fill: rgb(0,0,0)!important;
-}
 </style>
 """, unsafe_allow_html=True)
 
